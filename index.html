@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Animal Sounds</h1>
+        <p class="subtitle">Click on an animal to hear its sound</p>
+        
+        <div class="animals-grid">
+            <button class="animal-btn" data-animal="monkey" data-sound="monkey.mp3">
+                <span class="emoji">🐵</span>
+                <span class="name">Monkey</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="bear" data-sound="bear.mp3">
+                <span class="emoji">🐻</span>
+                <span class="name">Bear</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="elephant" data-sound="elephant.mp3">
+                <span class="emoji">🐘</span>
+                <span class="name">Elephant</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="lion" data-sound="lion.mp3">
+                <span class="emoji">🦁</span>
+                <span class="name">Lion</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="snake" data-sound="snake.mp3">
+                <span class="emoji">🐍</span>
+                <span class="name">Snake</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="crocodile" data-sound="crocodile.mp3">
+                <span class="emoji">🐊</span>
+                <span class="name">Crocodile</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="zebra" data-sound="zebra.mp3">
+                <span class="emoji">🦓</span>
+                <span class="name">Zebra</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="rhinoceros" data-sound="rhinoceros.mp3">
+                <span class="emoji">🦏</span>
+                <span class="name">Rhinoceros</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="tiger" data-sound="tiger.mp3">
+                <span class="emoji">🐯</span>
+                <span class="name">Tiger</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="giraffe" data-sound="giraffe.mp3">
+                <span class="emoji">🦒</span>
+                <span class="name">Giraffe</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="hippopotamus" data-sound="hippopotamus.mp3">
+                <span class="emoji">🦛</span>
+                <span class="name">Hippopotamus</span>
+            </button>
+            
+            <button class="animal-btn" data-animal="kangaroo" data-sound="kangaroo.mp3">
+                <span class="emoji">🦘</span>
+                <span class="name">Kangaroo</span>
+            </button>
+        </div>
+        
+        <div id="now-playing" class="now-playing"></div>
+    </div>
+    
+    <audio id="audio-player" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
